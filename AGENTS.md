@@ -13,3 +13,5 @@
 - Config hypotheses live in `src/engine/config.ts`, tagged `Q-08`.
 
 **Definition of Done:** tests green + Vercel deploy + curl of the published URL confirms the feature.
+
+**Review loop (D-101):** prompts live in /prompts as P-XXX.md files. After executing one, commit and stop. Claude (reviewer) pulls, reads the diff, runs tests independently, and either accepts or issues prompts/P-XXX-fix.md. Never execute a fix prompt before it exists.
